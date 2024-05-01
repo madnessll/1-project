@@ -1,0 +1,25 @@
+.design {
+  padding: 48px 15px;
+}
+.design__subtitle {
+  text-align: unset;
+}
+@media (max-width: 996px){
+  .design__wrapper {
+    flex-direction: column;
+  }
+  .design__content {
+    text-align: center;
+  }
+  .design__btn {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 452px) {
+  .design__img img {
+    width: 90%;
+  }
+  .design__wrapper {
+    gap: 0;
+  }
+}

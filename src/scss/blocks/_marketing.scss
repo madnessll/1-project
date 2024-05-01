@@ -1,0 +1,92 @@
+.marketing {
+  padding: 41px 15px 94px;
+}
+.marketing__title {
+  margin-bottom: 8px;
+}
+.marketing__subtitle {
+  max-width: 628px;
+  margin: 0 auto;
+  margin-bottom: 205px;
+}
+.marketing__subtitle h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--neutral-grey);
+  text-align: center;
+}
+.marketing__cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.marketing__card {
+  border-radius: 8px;
+  padding: 16px;
+  width: 317px;
+  height: 176px;
+  box-shadow: 0 8px 16px 0 rgba(171, 190, 209, 0.4);
+  background: var(--neutral-silver);
+}
+.marketing__card-info {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--neutral-grey);
+  margin-bottom: 24px;
+}
+.marketing__card-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--brand-primary);
+  padding-left: 77px;
+  padding-right: 77px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &::after {
+    content: "";
+    background: url("./../../img/arrow-right.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+}
+.marketing__card:hover {
+  transform: translateY(-10px) scale(1.2); /* Move the card 10px up and increase size by 5% on hover */
+  box-shadow: 0 12px 24px 0 rgba(171, 190, 209, 0.6); /* Increase shadow size on hover */
+}
+.marketing__card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 686px) {
+  .marketing__subtitle {
+    margin-bottom: 95px;
+  }
+}
+@media (max-width: 400px) {
+  .marketing__card {
+    width: 282px;
+    height: 146px;
+  }
+  .marketing__card-info {
+    font-size: 16px;
+  }
+  .marketing__card-btn {
+    font-size: 16px;
+  }
+  .marketing__subtitle {
+    margin-bottom: 50px;
+  }
+}

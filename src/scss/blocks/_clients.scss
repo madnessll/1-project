@@ -1,0 +1,21 @@
+.clients {
+  padding: 40px 15px 65px;
+}
+.clients__title {
+  margin-bottom: 40px;
+}
+.clients__subtile {
+  margin-bottom: 41px;
+}
+.clients__images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media (max-width: 700px) {
+  .clients__images {
+    justify-content: center;
+  }
+}
